@@ -1,17 +1,35 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const starRating = document.querySelector(".star-rating");
-  const score = parseInt(starRating.getAttribute("data-score"), 10);
-  const stars = starRating.querySelectorAll(".star");
-  console.log(stars);
+  // 遍歷所有的.star-rating 元素
+  const starRatings = document.querySelectorAll(".star-rating");
 
-  for (let i = 0; i < stars.length; i++) {
-    if (i < score) {
-      stars[i].textContent = "kid_star"; /* 使用你的填充星星圖標圖片 */
-    } else {
-      stars[i].textContent = ''; /* 使用你的空星星圖標圖片 */
+  starRatings.forEach(function (starRating) {
+    const score = parseInt(starRating.getAttribute("data-score"), 10);
+    const stars = starRating.querySelectorAll(".star");
+
+    for (let i = 0; i < stars.length; i++) {
+      if (i < score) {
+        stars[i].textContent = "kid_star"; // 使用你的填充星星圖標圖片
+      } else {
+        stars[i].textContent = ""; // 使用你的空星星圖標圖片
+      }
     }
-  }
+  });
 });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const starRating = document.querySelector(".star-rating");
+//   const score = parseInt(starRating.getAttribute("data-score"), 10);
+//   const stars = starRating.querySelectorAll(".star");
+//   console.log(stars);
+
+//   for (let i = 0; i < stars.length; i++) {
+//     if (i < score) {
+//       stars[i].textContent = "kid_star"; /* 使用你的填充星星圖標圖片 */
+//     } else {
+//       stars[i].textContent = ''; /* 使用你的空星星圖標圖片 */
+//     }
+//   }
+// });
 // document.addEventListener("DOMContentLoaded", function () {
 //   const starRating = document.getElementById("star-rating");
 //   const score = parseInt(starRating.getAttribute("data-score"), 10);
@@ -30,13 +48,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 let currentOpenMenu = null; // 用來追蹤當前開啟的選單
 
-document.querySelectorAll(".dropdown-btn").forEach(function (btn) {
+document.querySelectorAll(".dropdown__toggle").forEach(function (btn) {
   btn.addEventListener("click", function (event) {
     // 避免事件冒泡，防止點擊選單內部時觸發按鈕事件
     event.stopPropagation();
 
     // 獲取點擊按鈕的下一個兄弟元素，即相對應的選單
-    var dropdownContent = this.nextElementSibling;
+    const dropdownContent = this.nextElementSibling;
 
     // 如果當前開啟的選單存在且不是點擊的選單，則關閉它
     if (currentOpenMenu && currentOpenMenu !== dropdownContent) {
@@ -58,10 +76,9 @@ document.querySelectorAll(".dropdown-btn").forEach(function (btn) {
 document.addEventListener("click", function (event) {
   // 如果點擊的不是按鈕或選單，則關閉所有開啟的選單
   if (
-    !event.target.matches(".dropdown-btn") &&
-    !event.target.matches(".dropdown-content *")
+    !event.target.matches(".dropdown__toggle") && !event.target.matches(".dropdown__menu *")
   ) {
-    document.querySelectorAll(".dropdown-content").forEach(function (content) {
+    document.querySelectorAll(".dropdown__menu").forEach(function (content) {
       content.style.display = "none";
     });
     currentOpenMenu = null; // 清除當前開啟的選單
