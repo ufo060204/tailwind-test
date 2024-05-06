@@ -650,15 +650,15 @@ ul {
 
 /* 顯示底線 */
 
-.nav__link.active::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 1px;
-  background: black;
-}
+/* .nav__link.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: black;
+  } */
 
 .nav__link {
   position: relative;
@@ -723,6 +723,14 @@ ul {
 .dropdown__item:hover {
   --tw-text-opacity: 1;
   color: rgb(249 115 22 / var(--tw-text-opacity));
+}
+
+.dropdown__menu.active {
+  display: block;
+}
+
+.dropdown__menu.show {
+  display: block;
 }
 
 .btn {
@@ -791,12 +799,20 @@ ul {
     background: black;
   } */
 
+.fixed {
+  position: fixed;
+}
+
 .block {
   display: block;
 }
 
 .flex {
   display: flex;
+}
+
+.table {
+  display: table;
 }
 
 .hidden {
@@ -817,6 +833,14 @@ ul {
 
 .w-\[100px\] {
   width: 100px;
+}
+
+.table-auto {
+  table-layout: auto;
+}
+
+.table-fixed {
+  table-layout: fixed;
 }
 
 .items-center {
