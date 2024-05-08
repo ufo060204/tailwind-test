@@ -134,9 +134,7 @@ function toggleDropdown(toggle) {
   navLink.classList.toggle("nav__link-show");
 
   // 更新 activeDropdown
-  activeDropdown = dropdownMenu.classList.contains("show")
-    ? dropdownMenu
-    : null;
+  activeDropdown = dropdownMenu.classList.contains("show") ? dropdownMenu : null;
 }
 
 // 點擊選單按鈕時觸發
@@ -147,7 +145,10 @@ dropdownToggles.forEach((toggle) => {
 // 點擊空白處關閉選單
 document.addEventListener("click", (event) => {
   const target = event.target;
-  if (!target.closest(".nav__item")) {
+  // const isDropdownLink = target.closest(".dropdown__menu") !== null;
+  const isDropdownLink = target.matches(".dropdown__item"); // 修改這一行
+
+  if (!target.closest(".nav__item") || isDropdownLink) { // 修改這一行加上 || isDropdownLink
     navLinks.forEach((link) => link.classList.remove("nav__link-show"));
     const openDropdown = document.querySelector(".dropdown__menu.show");
     if (openDropdown) {
