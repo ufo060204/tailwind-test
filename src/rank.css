@@ -96,4 +96,18 @@
   .dropdown__menu.show {
     display: block;
   }
+  /* .play_arrow li {
+    list-style-image: url(../src/image/play_arrow.svg);
+  } */
+  .play_arrow li {
+    /* @apply relative; */
+    display: flex;
+    align-items: center;
+  }
+  .play_arrow li::before {
+    /* position: absolute; */
+    content: url(../src/image/play_arrow.svg);
+    line-height: 1;
+    /* background-image: url(./image/play_arrow.svg); */
+  }
 }
