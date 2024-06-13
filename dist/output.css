@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -211,6 +211,8 @@ textarea {
   /* 1 */
   line-height: inherit;
   /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
   color: inherit;
   /* 1 */
   margin: 0;
@@ -234,9 +236,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -510,6 +512,10 @@ ul {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 ::backdrop {
@@ -560,6 +566,10 @@ ul {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 .container {
@@ -750,6 +760,22 @@ ul {
   /* background-image: url(./image/play_arrow.svg); */
 }
 
+/* 预先隐藏 basis_02 */
+
+.basis_02 {
+  display: none;
+}
+
+/* .basis_01:empty {
+    display: none;
+  } */
+
+/* 当 .basis_01 为空时，显示 .basis_02 */
+
+.basis_01:empty + .basis_02 {
+  display: block;
+}
+
 .btn {
   background: blue;
   padding: 16px;
@@ -852,6 +878,14 @@ ul {
   width: 100px;
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
+.basis-3\/5 {
+  flex-basis: 60%;
+}
+
 .table-auto {
   table-layout: auto;
 }
@@ -860,12 +894,24 @@ ul {
   table-layout: fixed;
 }
 
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
 }
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-0 {
+  gap: 0px;
 }
 
 .gap-4 {
@@ -1000,6 +1046,16 @@ ul {
 
 .hover\:filter-blur:hover {
   filter: blur(5px);
+}
+
+@media (min-width: 1024px) {
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 1536px) {

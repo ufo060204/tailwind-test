@@ -110,4 +110,19 @@
     line-height: 1;
     /* background-image: url(./image/play_arrow.svg); */
   }
+
+  /* 预先隐藏 basis_02 */
+  .basis_02 {
+    display: none;
+  }
+  /* .basis_01:empty {
+    display: none;
+  } */
+  /* 当 .basis_01 为空时，显示 .basis_02 */
+  .basis_01:empty + .basis_02 {
+    display: block;
+  }
+
+
+  
 }
