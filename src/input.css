@@ -79,6 +79,7 @@
     height: 1px;
     background: black;
   } */
+  
 }
 
 @layer utilities {
@@ -89,3 +90,21 @@
     color: var(--bs-primary);
   }
 }
+
+.official__link {
+    color: red;
+  }
+  .official__link::after {
+    /* @apply text-base leading-none tracking-normal font-normal whitespace-nowrap flex items-center; */
+    color: red;
+    /* content: "\2BC8"; */
+    content: "⯈";
+    font-size: 14px;
+    margin-left: 4px;
+    /* svg 載入 */
+    /* background-image: url('../../images/new_dentist/icon_right_triangle.svg');
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-position: center; */
+  }

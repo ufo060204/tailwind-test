@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700&display=swap" >
+
+  <!-- icon 引入 -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <!-- 引入 Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+  <link rel="stylesheet" href="variable.css">
+  <link rel="stylesheet" href="./dist/output.css" >
+</head>
+<body>
+  <header class="py-4.5">
+    <div class="container 2xl:px-32">
+      <div class="flex justify-between items-center">
+        <div class="title title--site t-title--site">
+          <figure>
+            <img class="w-[100px]" src="https://images.unsplash.com/photo-1586867026567-b9b63ae58472?q=80&w=1982&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="best-doctor 台灣好醫生" />
+            <!-- <figcaption>台灣好醫生</figcaption> -->
+          </figure>
+          <!-- <p class="subtitle subtitle--site">www.best-doctor.com.tw</p> -->
+          <!-- 套版:首頁連結 -->
+          <a class="ablink" href="index.html"></a>
+        </div>
+        <nav class="nav">
+          <div class="nav__item">
+            <button type="button" class="dropdown__toggle">
+              <span class="nav__link">熱門推薦</span>
+              <span class="material-symbols-outlined">arrow_drop_down</span>
+            </button>
+            <ul class="dropdown__menu">
+              <li><a class="dropdown__item" target="_blank" href="https://fonts.google.com/">台北</a></li>
+              <li><a class="dropdown__item" target="_blank" href="https://fonts.google.com/">台中</a></li>
+              <li><a class="dropdown__item" target="_blank" href="https://fonts.google.com/">高雄</a></li>
+            </ul>
+          </div>
+          <div class="nav__item">
+            <button type="button" class="dropdown__toggle">
+              <span class="nav__link">文章分享</span>
+              <span class="material-symbols-outlined">arrow_drop_down</span>
+            </button>
+            <ul class="dropdown__menu">
+              <li><a class="dropdown__item" href="#">台北</a></li>
+              <li><a class="dropdown__item" href="#">台中</a></li>
+              <li><a class="dropdown__item" href="#">高雄</a></li>
+            </ul>
+          </div>
+          <div class="nav__item">
+            <button type="button" class="dropdown__toggle">
+              <span class="nav__link">熱門推薦</span>
+              <span class="material-symbols-outlined">arrow_drop_down</span>
+            </button>
+            <ul class="dropdown__menu">
+              <li><a class="dropdown__item" href="#">台北</a></li>
+              <li><a class="dropdown__item" href="#">台中</a></li>
+              <li><a class="dropdown__item" href="#">高雄</a></li>
+            </ul>
+          </div>
+          <!-- <div class="nav__item">
+            <button type="button" class="dropdown__toggle">
+              <span class="nav__link nav__link-show">文章分享</span>
+              <span class="material-symbols-outlined">arrow_drop_down</span>
+            </button>
+            <ul class="dropdown__menu">
+              <li><a class="dropdown__item" href="#">台北</a></li>
+              <li><a class="dropdown__item" href="#">台中</a></li>
+              <li><a class="dropdown__item" href="#">高雄</a></li>
+            </ul>
+          </div>
+          <div class="nav__item">
+            <button type="button" class="dropdown__toggle">
+              <span class="nav__link">文章分享</span>
+              <span class="material-symbols-outlined">arrow_drop_down</span>
+            </button>
+            <ul class="dropdown__menu">
+              <li><a class="dropdown__item" href="#">台北</a></li>
+              <li><a class="dropdown__item" href="#">台中</a></li>
+              <li><a class="dropdown__item" href="#">高雄</a></li>
+            </ul>
+          </div> -->
+        </nav>
+        <button type="button" class="hidden">
+          <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+            stroke="currentColor" class="h-8 w-8 fill-current text-black">
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <nav>
+      <ul class="flex gap-4">
+        <li><a class="nav-link" href="#">Home</a></li>
+        <li><a class="nav-link" href="#">About</a></li>
+        <li><a class="nav-link" href="#">Services</a></li>
+        <li><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="flex gap-5">
+      <div>
+        <button class="dropdown-btn nav-link">Home</button>
+        <div class="dropdown-content hidden">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div> 
+      <div>
+        <button class="dropdown-btn nav-link">About</button>
+        <div class="dropdown-content hidden">
+          <a href="#">Link 4</a>
+          <a href="#">Link 5</a>
+          <a href="#">Link 6</a>
+        </div>
+      </div>
+    </nav>
+    <h1 class="text-3xl text-lightBlue font-bold underline font-display">
+      Hello world!
+    </h1>
+    <h2 class="text-red-500 hover:text-blue">你好</h2>
+    <ul>
+      <li class="bg-tahiti-500">1</li>
+      <li class="text-tahiti">你好嗎</li>
+      <li>3</li>
+    </ul>
+    <button class="btn hover:bg-red-500">按鈕</button>
+    <h2 class="hover:filter-blur h-[72px] bg-red-500">模糊吧</h2>
+    <p class="text-primary-100 text-xl">
+      加工內存說法零售來到出售，私服將在公司搭配預覽，去年內心圖片新增見到伺服器上了環節事故開發感謝為什麼來看，一段網遊不到手裡觀察，詳細小學程式進口上門您現在概念鈴聲種種，財產定義將來目錄他人環境民眾一副，都是地點只能網址提前網易文檔雜誌重量可能對他達到，只。
+    </p>
+
+    <!-- 卡片 -->
+    <div class="card">
+      <h3 class="text-2xl">卡片</h3>
+      <p>這是一張卡片</p>
+    </div>
+
+    <!-- 地圖 -->
+    <div class="map">
+      <ul>
+        <li>
+          不承擔每個當時逐步好好堅持都會老闆背後，得分主義機制產品簡直最為你想，類別有關部門，起來成員對象，我在眼中完善學院連續金幣打算學歷內存要求雜誌用途相比女兒，石油過程行情，長時間都沒比如吃飯，三人畢業印象，做好可愛時期強調登錄眼睛，相信而且，一次後來整合一。
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Categories<h2>
+          <ul class="*:rounded-full *:border *:border-sky-100 *:bg-sky-50 *:px-2 *:py-0.5 *:inline-block">
+            <li>Sales</li>
+            <li>Marketing</li>
+            <li>SEO</li>
+          </ul>
+    </div>
+
+    <!-- <ul id="star-rating" data-score="2.5">
+      <li class="star"></li>
+      <li class="star"></li>
+      <li class="star"></li>
+      <li class="star"></li>
+      <li class="star"></li>
+    </ul> -->
+    <ul class="star-rating" data-score="2.2">
+      <span class="star material-symbols-outlined text-yellow-500">kid_star</span>
+      <span class="star material-symbols-outlined text-yellow-500">kid_star</span>
+      <span class="star material-symbols-outlined text-yellow-500">kid_star</span>
+      <span class="star material-symbols-outlined text-yellow-500">kid_star</span>
+      <span class="star material-symbols-outlined text-yellow-500">kid_star</span>
+    </ul>
+    <ul class="star-rating" data-score="3.6">
+      <span class="star material-symbols-outlined text-yellow-500">kid_star</span>
+      <span class="star material-symbols-outlined text-yellow-500">kid_star</span>
+      <span class="star material-symbols-outlined text-yellow-500">kid_star</span>
+      <span class="star material-symbols-outlined text-yellow-500">kid_star</span>
+      <span class="star material-symbols-outlined text-yellow-500">kid_star</span>
+    </ul>
+    <ul class="star-rating" data-score="4.8">
+      <span class="star material-symbols-outlined text-yellow-500">kid_star</span>
+      <span class="star material-symbols-outlined text-yellow-500">kid_star</span>
+      <span class="star material-symbols-outlined text-yellow-500">kid_star</span>
+      <span class="star material-symbols-outlined text-yellow-500">kid_star</span>
+      <span class="star material-symbols-outlined text-yellow-500">kid_star</span>
+    </ul>
+    <div class="text-5xl">
+      <i class="fas fa-arrow-left"></i>
+      <i class="fas fa-arrow-right"></i>
+      <i class="fa-solid fa-arrow-left"></i>
+      <i class="fa-solid fa-arrow-right"></i>
+    </div>
+    <!-- auto -->
+    <table class="table-auto">
+      <thead>
+        <tr>
+          <th>Song</th>
+          <th>Artist</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
+          <td>Malcolm Lockyer</td>
+          <td>1961</td>
+        </tr>
+        <tr>
+          <td>Witchy Woman</td>
+          <td>The Eagles</td>
+          <td>1972</td>
+        </tr>
+        <tr>
+          <td>Shining Star</td>
+          <td>Earth, Wind, and Fire</td>
+          <td>1975</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- fixed -->
+    <table class="table-fixed">
+      <thead>
+        <tr>
+          <th>Song</th>
+          <th>Artist</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
+          <td>Malcolm Lockyer</td>
+          <td>1961</td>
+        </tr>
+        <tr>
+          <td>Witchy Woman</td>
+          <td>The Eagles</td>
+          <td>1972</td>
+        </tr>
+        <tr>
+          <td>Shining Star</td>
+          <td>Earth, Wind, and Fire</td>
+          <td>1975</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- <ul style="list-style-image: url(./image/play_arrow.svg)" class="play_arrow"> -->
+    <ul class="play_arrow">
+      <li>你好</li>
+      <li>你好</li>
+      <li>你好</li>
+      <li>你好</li>
+    </ul>
+  </div>
+
+  <!-- <div class="container">
+    <section class="member">
+      <div class="flex flex-col-reverse lg:flex-row gap-0 lg:gap-13.5 flex-wrap">
+        <div class="basis-3/5">
+          <p class="member__subtitle">林傳凱 院長</p>
+          <ul class="member__menu">
+            <li class="member__list">中山醫學大學牙醫系</li>
+            <li class="member__list">全方位牙醫聯盟執行長</li>
+            <li class="member__list">前署立台中醫院牙科部主任</li>
+            <li class="member__list">台灣口腔醫務管理學會專科醫師</li>
+            <li class="member__list">中華民國牙醫師全國會副秘書長</li>
+          </ul>
+        </div>
+        <div class="flex-grow">
+          <h2 class="member__title">
+            真愛美學牙醫診所
+            <br class="hidden lg:block">
+            牙醫師介紹
+          </h2>
+        </div>
+      </div>
+      <ul class="member__submenu">
+        <li class="member__sublist">
+          <img src="../images/new_dentist/icon_tooth.svg" alt="齒顎矯正">
+          <span>齒顎矯正</span>
+        </li>
+        <li class="member__sublist">
+          <img src="../images/new_dentist/icon_tooth.svg" alt="人工植牙">
+          <span>人工植牙</span>
+        </li>
+        <li class="member__sublist">
+          <img src="../images/new_dentist/icon_tooth.svg" alt="全口重建">
+          <span>全口重建</span>
+        </li>
+        <li class="member__sublist">
+          <img src="../images/new_dentist/icon_tooth.svg" alt="齒顎矯正">
+          <span>齒顎矯正</span>
+        </li>
+        <li class="member__sublist">
+          <img src="../images/new_dentist/icon_tooth.svg" alt="MRC肌功能矯正">
+          <span>MRC肌功能矯正</span>
+        </li>
+        <li class="member__sublist">
+          <img src="../images/new_dentist/icon_tooth.svg" alt="全口重建">
+          <span>全口重建</span>
+        </li>
+      </ul>
+      <ul class="member__tertiary-menu">
+        <li class="member__tertiary-list">
+          <span>黃榆鈞醫師</span>
+          <p>
+            齒顎矯正專科、MRC肌功能矯正、人工植牙、特殊口腔照護、齒顎矯正專科、MRC肌功能矯正、人工植牙、特殊口腔照護、齒顎矯正專科、MRC肌功能矯正、人工植牙、特殊口腔照護、
+          </p>
+        </li>
+        <li class="member__tertiary-list">
+          <span>林金鋒醫師</span>
+          <p>
+            人工植牙、特殊口腔照護</p>
+        </li>
+        <li class="member__tertiary-list">
+          <span>張永芳醫師</span>
+          <p>
+            齒顎矯正、人工植牙
+          </p>
+        </li>
+        <li class="member__tertiary-list">
+          <span>陳進奇醫師</span>
+          <p>
+            家庭牙科、健保治療、齒顎矯正、人工植牙、齒顎矯正、家庭牙科、健保治療、齒顎矯正、人工植牙、齒顎矯正、人工植牙
+          </p>
+        </li>
+      </ul>
+    </section>
+  </div> -->
+  
+
+  <div class="container">
+    <section class="member">
+      <div class="flex flex-col-reverse lg:flex-row gap-0 lg:gap-13.5 flex-wrap">
+        <div class="basis-3/5 basis_01"></div>
+        <div class="basis-3/5 basis_02">
+          <ul class="member__tertiary-menu">
+            <li class="member__tertiary-list">
+              <span>黄榆钧医师</span>
+              <p>齿颚矫正专科、MRC肌功能矫正、人工植牙、特殊口腔照护、齿颚矫正专科、MRC肌功能矫正、人工植牙、特殊口腔照护、齿颚矫正专科、MRC肌功能矫正、人工植牙、特殊口腔照护、</p>
+            </li>
+            <li class="member__tertiary-list">
+              <span>林金锋医师</span>
+              <p>人工植牙、特殊口腔照护</p>
+            </li>
+            <li class="member__tertiary-list">
+              <span>张永芳医师</span>
+              <p>齿颚矫正、人工植牙</p>
+            </li>
+            <li class="member__tertiary-list">
+              <span>陈进奇医师</span>
+              <p>家庭牙科、健保治疗、齿颚矫正、人工植牙、齿颚矫正、家庭牙科、健保治疗、齿颚矫正、人工植牙、齿颚矫正、人工植牙</p>
+            </li>
+          </ul>
+        </div>
+        <div class="flex-grow">
+          <h2 class="member__title">
+            真爱美学牙医诊所
+            <br class="hidden lg:block">
+            牙医师介绍
+          </h2>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="official__link">官方連結</div>
+
+
+
+
+  <script src="/src/all.js"></script>
+</body>
+</html>
