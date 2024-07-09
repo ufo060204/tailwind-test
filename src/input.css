@@ -4,6 +4,9 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    font-family: "Noto Sans TC", sans-serif;
+  }
   html {
     font-family: "Fredoka", "sans-serif";
   }
@@ -93,18 +96,32 @@
 
 .official__link {
     color: red;
-  }
-  .official__link::after {
-    /* @apply text-base leading-none tracking-normal font-normal whitespace-nowrap flex items-center; */
-    color: red;
-    /* content: "\2BC8"; */
-    content: "⯈";
-    font-size: 14px;
-    margin-left: 4px;
-    /* svg 載入 */
-    /* background-image: url('../../images/new_dentist/icon_right_triangle.svg');
-    width: 12px;
-    height: 12px;
-    background-repeat: no-repeat;
-    background-position: center; */
-  }
+}
+.official__link::after {
+  /* @apply text-base leading-none tracking-normal font-normal whitespace-nowrap flex items-center; */
+  color: red;
+  /* content: "\2BC8"; */
+  content: "⯈";
+  font-size: 14px;
+  margin-left: 4px;
+  /* svg 載入 */
+  /* background-image: url('../../images/new_dentist/icon_right_triangle.svg');
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-position: center; */
+}
+
+.time {
+  @apply px-0 lg:px-5 mb-7.5 lg:mb-10
+}
+.time__title {
+  @apply text-3xl pl-2.5 mb-3 lg:mb-7.5;
+  color: var(--time__title-color);
+  border-left: 2px solid var(--time__title-border);
+}
+.time__text {
+  @apply mb-1 lg:mb-0 font-light;
+  color: var(--time__text-color);
+}
+  

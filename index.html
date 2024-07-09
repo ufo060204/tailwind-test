@@ -14,20 +14,21 @@
   <!-- 引入 Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="variable.css">
   <link rel="stylesheet" href="./dist/output.css" >
 </head>
 <body>
-  <header class="py-4.5">
+  <!-- <header class="py-4.5">
     <div class="container 2xl:px-32">
       <div class="flex justify-between items-center">
         <div class="title title--site t-title--site">
           <figure>
             <img class="w-[100px]" src="https://images.unsplash.com/photo-1586867026567-b9b63ae58472?q=80&w=1982&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="best-doctor 台灣好醫生" />
-            <!-- <figcaption>台灣好醫生</figcaption> -->
           </figure>
-          <!-- <p class="subtitle subtitle--site">www.best-doctor.com.tw</p> -->
-          <!-- 套版:首頁連結 -->
           <a class="ablink" href="index.html"></a>
         </div>
         <nav class="nav">
@@ -64,28 +65,6 @@
               <li><a class="dropdown__item" href="#">高雄</a></li>
             </ul>
           </div>
-          <!-- <div class="nav__item">
-            <button type="button" class="dropdown__toggle">
-              <span class="nav__link nav__link-show">文章分享</span>
-              <span class="material-symbols-outlined">arrow_drop_down</span>
-            </button>
-            <ul class="dropdown__menu">
-              <li><a class="dropdown__item" href="#">台北</a></li>
-              <li><a class="dropdown__item" href="#">台中</a></li>
-              <li><a class="dropdown__item" href="#">高雄</a></li>
-            </ul>
-          </div>
-          <div class="nav__item">
-            <button type="button" class="dropdown__toggle">
-              <span class="nav__link">文章分享</span>
-              <span class="material-symbols-outlined">arrow_drop_down</span>
-            </button>
-            <ul class="dropdown__menu">
-              <li><a class="dropdown__item" href="#">台北</a></li>
-              <li><a class="dropdown__item" href="#">台中</a></li>
-              <li><a class="dropdown__item" href="#">高雄</a></li>
-            </ul>
-          </div> -->
         </nav>
         <button type="button" class="hidden">
           <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
@@ -138,13 +117,11 @@
       加工內存說法零售來到出售，私服將在公司搭配預覽，去年內心圖片新增見到伺服器上了環節事故開發感謝為什麼來看，一段網遊不到手裡觀察，詳細小學程式進口上門您現在概念鈴聲種種，財產定義將來目錄他人環境民眾一副，都是地點只能網址提前網易文檔雜誌重量可能對他達到，只。
     </p>
 
-    <!-- 卡片 -->
     <div class="card">
       <h3 class="text-2xl">卡片</h3>
       <p>這是一張卡片</p>
     </div>
 
-    <!-- 地圖 -->
     <div class="map">
       <ul>
         <li>
@@ -162,13 +139,6 @@
           </ul>
     </div>
 
-    <!-- <ul id="star-rating" data-score="2.5">
-      <li class="star"></li>
-      <li class="star"></li>
-      <li class="star"></li>
-      <li class="star"></li>
-      <li class="star"></li>
-    </ul> -->
     <ul class="star-rating" data-score="2.2">
       <span class="star material-symbols-outlined text-yellow-500">kid_star</span>
       <span class="star material-symbols-outlined text-yellow-500">kid_star</span>
@@ -196,7 +166,6 @@
       <i class="fa-solid fa-arrow-left"></i>
       <i class="fa-solid fa-arrow-right"></i>
     </div>
-    <!-- auto -->
     <table class="table-auto">
       <thead>
         <tr>
@@ -223,7 +192,6 @@
         </tr>
       </tbody>
     </table>
-    <!-- fixed -->
     <table class="table-fixed">
       <thead>
         <tr>
@@ -251,125 +219,405 @@
       </tbody>
     </table>
 
-    <!-- <ul style="list-style-image: url(./image/play_arrow.svg)" class="play_arrow"> -->
     <ul class="play_arrow">
       <li>你好</li>
       <li>你好</li>
       <li>你好</li>
       <li>你好</li>
     </ul>
+  </div> -->
+
+  <div class="container px-0 2xl:px-32">
+    <div class="block lg:flex gap-[30px]">
+      <!-- 診所內容 -->
+      <main class="main basis-[68%] shrink-0">
+        <div class="container px-4 md:px-4 lg:px-0 xl:px-0 2xl:px-0">
+          <!-- 麵包屑 breadcrumb -->
+          <nav class="hidden lg:flex flex-col gap-10 px-5 py-4.5">
+            <ul class="breadcrumb">
+              <li class="breadcrumb__item">
+                <a href="https://www.best-doctor.com.tw/" target="_blank" rel="noreferrer noopener">台灣好醫生</a>
+                <span>/</span>
+              </li>
+              <li class="breadcrumb__item">
+                <a href="https://www.best-doctor.com.tw/" target="_blank" rel="noreferrer noopener">台中市</a>
+                <span>/</span>
+              </li>
+              <li class="breadcrumb__item">
+                <a href="https://www.best-doctor.com.tw/" target="_blank" rel="noreferrer noopener">西屯區</a>
+                <span>/</span>
+              </li>
+              <li class="breadcrumb__item">
+                <a href="new_rank.html">牙科診所推薦</a>
+                <span>/</span>
+              </li>
+              <li class="breadcrumb__item active">
+                真愛美學牙醫診所
+              </li>
+            </ul>
+          </nav>
+          <!-- 看診時間 time -->
+          <!-- 樣式測試 1 -->
+          <section class="time">
+            <div class="flex flex-col-reverse lg:flex-row gap-0 lg:gap-9.5 xl:gap-13.5">
+              <div class="basis-3/5 flex-shrink-0">
+                <!-- <table class="time__table">
+                      <thead>
+                        <tr class="time__table-bg">
+                          <th></th>
+                          <th>一</th>
+                          <th>二</th>
+                          <th>三</th>
+                          <th>四</th>
+                          <th>五</th>
+                          <th>六</th>
+                          <th>日</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>上午診</td>
+                          <td>看診</td>
+                          <td>看診</td>
+                          <td>看診</td>
+                          <td>看診</td>
+                          <td>看診</td>
+                          <td>看診</td>
+                          <td class="time__table--invisible">看診</td>
+                        </tr>
+                        <tr class="time__table-bg">
+                          <td>下午診</td>
+                          <td>看診</td>
+                          <td>看診</td>
+                          <td>看診</td>
+                          <td>看診</td>
+                          <td>看診</td>
+                          <td>看診</td>
+                          <td class="time__table--invisible">看診</td>
+                        </tr>
+                        <tr>
+                          <td>晚間診</td>
+                          <td>看診</td>
+                          <td>看診</td>
+                          <td>看診</td>
+                          <td>看診</td>
+                          <td>看診</td>
+                          <td class="time__table--invisible">看診</td>
+                          <td class="time__table--invisible">看診</td>
+                        </tr>
+                      </tbody>
+                    </table> -->
+  
+                <!-- 表格開始 -->
+                <table class="schedule-table">
+                  <!-- <thead>
+                        <tr>
+                          <th>星期</th>
+                          <th>看診時間</th>
+                        </tr>
+                      </thead> -->
+                  <tbody>
+                    <tr>
+                      <td class="text-xs md:text-base">星期一</td>
+                      <td class="text-xs md:text-base">09:30–12:00,14:00–17:30,18:30–21:00</td>
+                    </tr>
+                    <tr>
+                      <td class="text-xs md:text-base">星期二</td>
+                      <td class="text-xs md:text-base">09:30–12:00,14:00–17:30,18:30–21:00</td>
+                    </tr>
+                    <tr>
+                      <td class="text-xs md:text-base">星期三</td>
+                      <td class="text-xs md:text-base">09:00–12:00,14:00–17:30,18:30–21:00</td>
+                    </tr>
+                    <tr>
+                      <td class="text-xs md:text-base">星期四</td>
+                      <td class="text-xs md:text-base">09:30–12:00,14:00–17:30,18:30–21:00</td>
+                    </tr>
+                    <tr>
+                      <td class="text-xs md:text-base">星期五</td>
+                      <td class="text-xs md:text-base">09:30–12:00,14:00–17:30,18:30–21:00</td>
+                    </tr>
+                    <tr>
+                      <td class="text-xs md:text-base">星期六</td>
+                      <td class="text-xs md:text-base">14:00–17:30,18:30–21:00</td>
+                    </tr>
+                    <tr>
+                      <td class="text-xs md:text-base">星期日</td>
+                      <td class="text-xs md:text-base">休診</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- 表格結束 -->
+  
+              </div>
+              <div class="flex-grow">
+                <h2 class="time__title">
+                  真愛美學牙醫診所
+                  <br class="hidden lg:block">
+                  看診時間
+                </h2>
+                <p class="time__text">
+                  真愛美學牙醫診所的最新看診時間表，請電話諮詢診所或點此查看
+                </p>
+              </div>
+            </div>
+          </section>
+  
+          <!-- 樣式測試 2 -->
+          <section class="time">
+            <div class="grid grid-cols-1 lg:grid-cols-[60%_auto] gap-0 lg:gap-9.5 xl:gap-13.5">
+              <div class="overflow-auto">
+                <table style="table-layout: fixed; width: 100%; border: 1px solid #9eb2a2;" class="hidden md:table">
+                  <thead>
+                    <tr style="border-bottom: 1px solid #9eb2a2;" class="">
+                      <th style="padding: 6px 10px; width: 120px;background-color: #e6ebe7">一</th>
+                      <th style="padding: 6px 10px; width: 120px">二</th>
+                      <th style="padding: 6px 10px; width: 120px;background-color: #e6ebe7">三</th>
+                      <th style="padding: 6px 10px; width: 120px">四</th>
+                      <th style="padding: 6px 10px; width: 120px;background-color: #e6ebe7">五</th>
+                      <th style="padding: 6px 10px; width: 120px">六</th>
+                      <th style="padding: 6px 10px; width: 120px;background-color: #e6ebe7">日</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="">
+                      <td style="padding:12px 10px; word-break: break-all;background-color: #e6ebe7" class="text-center">
+                        09:30–12:00,14:00–17:30,18:30–21:00</td>
+                      <td style="padding:12px 10px; word-break: break-all;" class="text-center">
+                        09:30–12:00,14:00–17:30,18:30–21:00</td>
+                      <td style="padding:12px 10px; word-break: break-all;background-color: #e6ebe7" class="text-center">
+                        09:30–12:00,14:00–17:30,18:30–21:00</td>
+                      <td style="padding:12px 10px; word-break: break-all;" class="text-center">
+                        09:30–12:00,14:00–17:30,18:30–21:00</td>
+                      <td style="padding:12px 10px; word-break: break-all;background-color: #e6ebe7" class="text-center">
+                        09:30–12:00,14:00–17:30,18:30–21:00</td>
+                      <td style="padding:12px 10px; word-break: break-all;" class="text-center">
+                        09:30–12:00,14:00–17:30,18:30–21:00</td>
+                      <td style="padding:12px 10px; word-break: break-all;background-color: #e6ebe7" class="text-center">
+                        休息</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <table style="table-layout: fixed; width: 100%;border: 1px solid #9eb2a2;"
+                class="table md:hidden text-center">
+                <tbody>
+                  <tr class="grid grid-cols-[30%_70%]" style="background-color: #e6ebe7;">
+                    <td class="flex items-center justify-center">一</td>
+                    <td class="mx-auto" style="padding: 12px 10px;">
+                      <p style="width: 100px;word-break: break-all;">
+                        09:30–12:00,14:00–17:30,18:30–21:00
+                      </p>
+                    </td>
+                  </tr>
+                  <!-- <tr class="grid grid-cols-[30%_auto_120px_auto]">
+                        <td class="flex items-center justify-center" style="background-color: #ffffff;">二</td>
+                        <td class="" style="background-color: #ffffff;"></td>
+                        <td style="background-color: #ffffff;width: 120px;word-break: break-all; padding: 12px 10px;">09:30–12:00,14:00–17:30,18:30–21:00</td>
+                        <td class="" style="background-color: #ffffff;"></td>
+                      </tr>
+                      <tr class="grid grid-cols-[30%_auto_120px_auto]">
+                        <td class="flex items-center justify-center" style="background-color: #e6ebe7;">三</td>
+                        <td class="" style="background-color: #e6ebe7;"></td>
+                        <td style="background-color: #e6ebe7;width: 120px;word-break: break-all; padding: 12px 10px;">09:30–12:00,14:00–17:30,18:30–21:00</td>
+                        <td class="" style="background-color: #e6ebe7;"></td>
+                      </tr>
+                      <tr class="grid grid-cols-[30%_auto_120px_auto]">
+                        <td class="flex items-center justify-center" style="background-color: #ffffff;">四</td>
+                        <td class="" style="background-color: #ffffff;"></td>
+                        <td style="background-color: #ffffff;width: 120px;word-break: break-all; padding: 12px 10px;">09:30–12:00,14:00–17:30,18:30–21:00</td>
+                        <td class="" style="background-color: #ffffff;"></td>
+                      </tr>
+                      <tr class="grid grid-cols-[30%_auto_120px_auto]">
+                        <td class="flex items-center justify-center" style="background-color: #e6ebe7;">五</td>
+                        <td class="" style="background-color: #e6ebe7;"></td>
+                        <td style="background-color: #e6ebe7;width: 120px;word-break: break-all; padding: 12px 10px;">09:30–12:00,14:00–17:30,18:30–21:00</td>
+                        <td class="" style="background-color: #e6ebe7;"></td>
+                      </tr>
+                      <tr class="grid grid-cols-[30%_auto_120px_auto]">
+                        <td class="flex items-center justify-center" style="background-color: #ffffff;">六</td>
+                        <td class="" style="background-color: #ffffff;"></td>
+                        <td style="background-color: #ffffff;width: 120px;word-break: break-all; padding: 12px 10px;">09:30–12:00,14:00–17:30,18:30–21:00</td>
+                        <td class="" style="background-color: #ffffff;"></td>
+                      </tr>
+                      <tr class="grid grid-cols-[30%_auto_120px_auto]">
+                        <td class="flex items-center justify-center" style="background-color: #e6ebe7;">日</td>
+                        <td class="" style="background-color: #e6ebe7;"></td>
+                        <td style="background-color: #e6ebe7;width: 120px;word-break: break-all; padding: 12px 10px;">休診</td>
+                        <td class="" style="background-color: #e6ebe7;"></td>
+                      </tr> -->
+                </tbody>
+              </table>
+              <div class="flex-grow order-first lg:order-none">
+                <h2 class="time__title">
+                  真愛美學牙醫診所
+                  <br class="hidden lg:block">
+                  看診時間
+                </h2>
+                <p class="time__text">
+                  真愛美學牙醫診所的最新看診時間表，請電話諮詢診所或點此查看
+                </p>
+              </div>
+            </div>
+          </section>
+  
+          <!-- 樣式測試  -->
+          <section class="time">
+            <h2 style="margin-bottom: 12px;" class="time__title">真愛美學牙醫診所看診時間</h2>
+            <div class="grid grid-cols-1">
+              <div class="overflow-auto">
+                <table style="table-layout: fixed; width: 100%;border: 1px solid #9eb2a2;" class="table">
+                  <thead>
+                    <tr style="border-bottom: 1px solid #9eb2a2;" class="text-xs md:text-base">
+                      <th class="w-[96px] md:w-[120px] xl:w-[115px]" style="padding: 6px 10px;background-color: #e6ebe7">一
+                      </th>
+                      <th class="w-[96px] md:w-[120px] xl:w-[115px]" style="padding: 6px 10px">二</th>
+                      <th class="w-[96px] md:w-[120px] xl:w-[115px]" style="padding: 6px 10px;background-color: #e6ebe7">三
+                      </th>
+                      <th class="w-[96px] md:w-[120px] xl:w-[115px]" style="padding: 6px 10px">四</th>
+                      <th class="w-[96px] md:w-[120px] xl:w-[115px]" style="padding: 6px 10px;background-color: #e6ebe7">五
+                      </th>
+                      <th class="w-[96px] md:w-[120px] xl:w-[115px]" style="padding: 6px 10px">六</th>
+                      <th class="w-[96px] md:w-[120px] xl:w-[115px]" style="padding: 6px 10px;background-color: #e6ebe7">日
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="text-xs md:text-base">
+                      <td style="padding:12px 10px; word-break: break-all;;background-color: #e6ebe7" class="text-center">
+                        09:30–12:00,14:00–17:30,18:30–21:00</td>
+                      <td style="padding:12px 10px; word-break: break-all;" class="text-center">
+                        09:30–12:00,14:00–17:30,18:30–21:00</td>
+                      <td style="padding:12px 10px; word-break: break-all;;background-color: #e6ebe7" class="text-center">
+                        09:30–12:00,14:00–17:30,18:30–21:00</td>
+                      <td style="padding:12px 10px; word-break: break-all;" class="text-center">
+                        09:30–12:00,14:00–17:30,18:30–21:00</td>
+                      <td style="padding:12px 10px; word-break: break-all;;background-color: #e6ebe7" class="text-center">
+                        09:30–12:00,14:00–17:30,18:30–21:00</td>
+                      <td style="padding:12px 10px; word-break: break-all;" class="text-center">
+                        09:30–12:00,14:00–17:30,18:30–21:00</td>
+                      <td style="padding:12px 10px; word-break: break-all;;background-color: #e6ebe7" class="text-center">
+                        休息</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <p class="time__text">真愛美學牙醫診所的最新看診時間表，請電話諮詢診所或點此查看</p>
+          </section>
+        </div>
+      </main>
+      <!-- 側欄 -->
+      <aside class="aside">
+        <!-- 優質推薦 -->
+        <section class="hidden lg:block">
+          <h3 class="aside__title">優質推薦</h3>
+          <!-- 側欄卡片-院長 -->
+          <a class="card-clinic-aside-leader" href="http://doctorgo.lab.net/api/api.cpage.php?sno=1&cno=165967"
+            target="_blank" rel="noreferrer noopener">
+            <img src="../images/new_dentist/leader_01.webp" alt="陳冠靜 院長" loading="lazy">
+            <h4 class="card-clinic-aside-leader__title">
+              台中隱適美黑鑽級牙醫師
+              <br>
+              陳冠靜 院長
+            </h4>
+            <div class="card-clinic-aside-leader__text">
+              <p>
+                醫師是國內根管治療教師級的專家，她不會用花言巧語來吸引客戶，而是用實力來說話。多年的診療經驗與案例使然，無論是小孩還是老人，她都能給予最合適的治療。裘醫師也非常有耐心和同理心，療程操作快狠準，希望盡量減少病人的不適感。
+              </p>
+            </div>
+          </a>
+        </section>
+        <!-- 文章推薦 -->
+        <section>
+          <h3 class="aside__title">牙科文章推薦</h3>
+          <!-- 側欄卡片 -->
+          <a class="card-clinic-aside" href="https://www.best-doctor.com.tw/" target="_blank" rel="noreferrer noopener">
+            <h4 class="card-clinic-aside__title">隱形矯正就是靠牙套，牙醫提醒每次更換牙套時的注意</h4>
+            <img src="../images/new_dentist/aside_01.webp" alt="隱形矯正就是靠牙套，牙醫提醒每次更換牙套時的注意" loading="lazy">
+            <p class="card-clinic-aside__text">
+              佩戴時相當低調，而且能在必要時輕鬆取下，依據每個人情況的複雜性而定，您或許可以在短時間內感受變化，所有隱形牙套都不同。
+            </p>
+          </a>
+          <!-- 側欄卡片 -->
+          <a class="card-clinic-aside" href="https://www.best-doctor.com.tw/" target="_blank" rel="noreferrer noopener">
+            <h4 class="card-clinic-aside__title">隱形矯正就是靠牙套，牙醫提醒每次更換牙套時的注意</h4>
+            <img src="../images/new_dentist/aside_02.webp" alt="隱形矯正就是靠牙套，牙醫提醒每次更換牙套時的注意" loading="lazy">
+            <p class="card-clinic-aside__text">
+              佩戴時相當低調，而且能在必要時輕鬆取下，依據每個人情況的複雜性而定，您或許可以在短時間內感受變化，所有隱形牙套都不同。
+            </p>
+          </a>
+          <!-- 側欄卡片 -->
+          <a class="card-clinic-aside" href="https://www.best-doctor.com.tw/" target="_blank" rel="noreferrer noopener">
+            <h4 class="card-clinic-aside__title">隱形矯正就是靠牙套，牙醫提醒每次更換牙套時的注意</h4>
+            <img src="../images/new_dentist/aside_03.webp" alt="隱形矯正就是靠牙套，牙醫提醒每次更換牙套時的注意" loading="lazy">
+            <p class="card-clinic-aside__text">
+              佩戴時相當低調，而且能在必要時輕鬆取下，依據每個人情況的複雜性而定，您或許可以在短時間內感受變化，所有隱形牙套都不同。
+            </p>
+          </a>
+        </section>
+        <!-- 網友搜尋列表 -->
+        <section>
+          <h3 class="aside__title--bg">熱門網友搜尋列表</h3>
+          <ul class="aside__menu">
+            <li class="aside__list"><a href="https://www.best-doctor.com.tw/" target="_blank"
+                rel="noreferrer noopener">台中西區缺牙改善牙科推薦</a></li>
+            <li class="aside__list"><a href="https://www.best-doctor.com.tw/" target="_blank"
+                rel="noreferrer noopener">台中西區局部式活動假牙牙科推薦</a></li>
+            <li class="aside__list"><a href="https://www.best-doctor.com.tw/" target="_blank"
+                rel="noreferrer noopener">台中西區口臭治療牙科推薦</a></li>
+            <li class="aside__list"><a href="https://www.best-doctor.com.tw/" target="_blank"
+                rel="noreferrer noopener">台中西區缺牙改善牙科推薦</a></li>
+            <li class="aside__list"><a href="https://www.best-doctor.com.tw/" target="_blank"
+                rel="noreferrer noopener">台中西區無痛植牙推薦</a></li>
+            <li class="aside__list"><a href="https://www.best-doctor.com.tw/" target="_blank"
+                rel="noreferrer noopener">台中西區MRC機功能矯正牙科推薦</a></li>
+            <li class="aside__list"><a href="https://www.best-doctor.com.tw/" target="_blank"
+                rel="noreferrer noopener">台中西區無痛洗牙牙科推薦</a></li>
+            <li class="aside__list"><a href="https://www.best-doctor.com.tw/" target="_blank"
+                rel="noreferrer noopener">台中西區局部是活動假牙牙科推薦</a></li>
+            <li class="aside__list"><a href="https://www.best-doctor.com.tw/" target="_blank"
+                rel="noreferrer noopener">台中西區口臭治療牙科推薦</a></li>
+          </ul>
+        </section>
+        <!-- Tag 熱門標籤 -->
+        <section>
+          <h3 class="aside__title--bg">Tags 熱門標籤</h3>
+          <ul class="aside__menu">
+            <li class="aside__list"><a href="https://www.best-doctor.com.tw/" target="_blank"
+                rel="noreferrer noopener">BPS高吸附活動假牙</a></li>
+            <li class="aside__list"><a href="https://www.best-doctor.com.tw/" target="_blank"
+                rel="noreferrer noopener">3D微創植牙評價</a></li>
+            <li class="aside__list"><a href="https://www.best-doctor.com.tw/" target="_blank"
+                rel="noreferrer noopener">牙齒矯正 年齡</a></li>
+            <li class="aside__list"><a href="https://www.best-doctor.com.tw/" target="_blank"
+                rel="noreferrer noopener">植體覆蓋式活動義齒價格</a></li>
+            <li class="aside__list"><a href="https://www.best-doctor.com.tw/" target="_blank"
+                rel="noreferrer noopener">兒童矯正評價</a></li>
+            <li class="aside__list"><a href="https://www.best-doctor.com.tw/" target="_blank"
+                rel="noreferrer noopener">吸附式假牙費用</a></li>
+            <li class="aside__list"><a href="https://www.best-doctor.com.tw/" target="_blank"
+                rel="noreferrer noopener">吸附式全口活動假牙注意事項</a></li>
+          </ul>
+        </section>
+        <!-- 好醫生熱門推薦 -->
+        <section>
+          <h3 class="aside__title--bg">好醫生熱門推薦</h3>
+          <ul class="aside__menu">
+            <li class="aside__list"><a href="https://www.best-doctor.com.tw/" target="_blank"
+                rel="noreferrer noopener">台中東區隱形矯正推薦</a></li>
+            <li class="aside__list"><a href="https://www.best-doctor.com.tw/" target="_blank"
+                rel="noreferrer noopener">台中南區齒顎矯正推薦</a></li>
+            <li class="aside__list"><a href="https://www.best-doctor.com.tw/" target="_blank"
+                rel="noreferrer noopener">台中西屯隱形矯正推薦</a></li>
+          </ul>
+        </section>
+      </aside>
+    </div>
   </div>
 
-  <!-- <div class="container">
-    <section class="member">
-      <div class="flex flex-col-reverse lg:flex-row gap-0 lg:gap-13.5 flex-wrap">
-        <div class="basis-3/5">
-          <p class="member__subtitle">林傳凱 院長</p>
-          <ul class="member__menu">
-            <li class="member__list">中山醫學大學牙醫系</li>
-            <li class="member__list">全方位牙醫聯盟執行長</li>
-            <li class="member__list">前署立台中醫院牙科部主任</li>
-            <li class="member__list">台灣口腔醫務管理學會專科醫師</li>
-            <li class="member__list">中華民國牙醫師全國會副秘書長</li>
-          </ul>
-        </div>
-        <div class="flex-grow">
-          <h2 class="member__title">
-            真愛美學牙醫診所
-            <br class="hidden lg:block">
-            牙醫師介紹
-          </h2>
-        </div>
-      </div>
-      <ul class="member__submenu">
-        <li class="member__sublist">
-          <img src="../images/new_dentist/icon_tooth.svg" alt="齒顎矯正">
-          <span>齒顎矯正</span>
-        </li>
-        <li class="member__sublist">
-          <img src="../images/new_dentist/icon_tooth.svg" alt="人工植牙">
-          <span>人工植牙</span>
-        </li>
-        <li class="member__sublist">
-          <img src="../images/new_dentist/icon_tooth.svg" alt="全口重建">
-          <span>全口重建</span>
-        </li>
-        <li class="member__sublist">
-          <img src="../images/new_dentist/icon_tooth.svg" alt="齒顎矯正">
-          <span>齒顎矯正</span>
-        </li>
-        <li class="member__sublist">
-          <img src="../images/new_dentist/icon_tooth.svg" alt="MRC肌功能矯正">
-          <span>MRC肌功能矯正</span>
-        </li>
-        <li class="member__sublist">
-          <img src="../images/new_dentist/icon_tooth.svg" alt="全口重建">
-          <span>全口重建</span>
-        </li>
-      </ul>
-      <ul class="member__tertiary-menu">
-        <li class="member__tertiary-list">
-          <span>黃榆鈞醫師</span>
-          <p>
-            齒顎矯正專科、MRC肌功能矯正、人工植牙、特殊口腔照護、齒顎矯正專科、MRC肌功能矯正、人工植牙、特殊口腔照護、齒顎矯正專科、MRC肌功能矯正、人工植牙、特殊口腔照護、
-          </p>
-        </li>
-        <li class="member__tertiary-list">
-          <span>林金鋒醫師</span>
-          <p>
-            人工植牙、特殊口腔照護</p>
-        </li>
-        <li class="member__tertiary-list">
-          <span>張永芳醫師</span>
-          <p>
-            齒顎矯正、人工植牙
-          </p>
-        </li>
-        <li class="member__tertiary-list">
-          <span>陳進奇醫師</span>
-          <p>
-            家庭牙科、健保治療、齒顎矯正、人工植牙、齒顎矯正、家庭牙科、健保治療、齒顎矯正、人工植牙、齒顎矯正、人工植牙
-          </p>
-        </li>
-      </ul>
-    </section>
-  </div> -->
   
 
-  <div class="container">
-    <section class="member">
-      <div class="flex flex-col-reverse lg:flex-row gap-0 lg:gap-13.5 flex-wrap">
-        <div class="basis-3/5 basis_01"></div>
-        <div class="basis-3/5 basis_02">
-          <ul class="member__tertiary-menu">
-            <li class="member__tertiary-list">
-              <span>黄榆钧医师</span>
-              <p>齿颚矫正专科、MRC肌功能矫正、人工植牙、特殊口腔照护、齿颚矫正专科、MRC肌功能矫正、人工植牙、特殊口腔照护、齿颚矫正专科、MRC肌功能矫正、人工植牙、特殊口腔照护、</p>
-            </li>
-            <li class="member__tertiary-list">
-              <span>林金锋医师</span>
-              <p>人工植牙、特殊口腔照护</p>
-            </li>
-            <li class="member__tertiary-list">
-              <span>张永芳医师</span>
-              <p>齿颚矫正、人工植牙</p>
-            </li>
-            <li class="member__tertiary-list">
-              <span>陈进奇医师</span>
-              <p>家庭牙科、健保治疗、齿颚矫正、人工植牙、齿颚矫正、家庭牙科、健保治疗、齿颚矫正、人工植牙、齿颚矫正、人工植牙</p>
-            </li>
-          </ul>
-        </div>
-        <div class="flex-grow">
-          <h2 class="member__title">
-            真爱美学牙医诊所
-            <br class="hidden lg:block">
-            牙医师介绍
-          </h2>
-        </div>
-      </div>
-    </section>
-  </div>
 
   <div class="official__link">官方連結</div>
 

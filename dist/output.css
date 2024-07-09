@@ -446,6 +446,10 @@ video {
   display: none;
 }
 
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
 html {
   font-family: "Fredoka", "sans-serif";
 }
@@ -846,6 +850,15 @@ ul {
   position: fixed;
 }
 
+.order-first {
+  order: -9999;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .block {
   display: block;
 }
@@ -856,6 +869,10 @@ ul {
 
 .table {
   display: table;
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -878,6 +895,18 @@ ul {
   width: 100px;
 }
 
+.w-\[96px\] {
+  width: 96px;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
+}
+
 .flex-grow {
   flex-grow: 1;
 }
@@ -886,12 +915,36 @@ ul {
   flex-basis: 60%;
 }
 
+.basis-\[60\%\] {
+  flex-basis: 60%;
+}
+
+.basis-\[68\%\] {
+  flex-basis: 68%;
+}
+
 .table-auto {
   table-layout: auto;
 }
 
 .table-fixed {
   table-layout: fixed;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-\[30\%_70\%\] {
+  grid-template-columns: 30% 70%;
+}
+
+.grid-cols-\[30\%_auto_120px_auto\] {
+  grid-template-columns: 30% auto 120px auto;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .flex-col-reverse {
@@ -906,6 +959,10 @@ ul {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -914,12 +971,28 @@ ul {
   gap: 0px;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-\[30px\] {
+  gap: 30px;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .bg-red-500 {
@@ -931,9 +1004,28 @@ ul {
   fill: currentColor;
 }
 
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-display {
@@ -958,6 +1050,11 @@ ul {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold {
@@ -1015,10 +1112,57 @@ ul {
   margin-left: 4px;
   /* svg 載入 */
   /* background-image: url('../../images/new_dentist/icon_right_triangle.svg');
-    width: 12px;
-    height: 12px;
-    background-repeat: no-repeat;
-    background-position: center; */
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-position: center; */
+}
+
+.time {
+  margin-bottom: 1.875rem;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+@media (min-width: 1024px) {
+  .time {
+    margin-bottom: 2.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+.time__title {
+  margin-bottom: 0.75rem;
+  padding-left: 0.625rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+@media (min-width: 1024px) {
+  .time__title {
+    margin-bottom: 1.875rem;
+  }
+}
+
+.time__title {
+  color: var(--time__title-color);
+  border-left: 2px solid var(--time__title-border);
+}
+
+.time__text {
+  margin-bottom: 0.25rem;
+  font-weight: 300;
+}
+
+@media (min-width: 1024px) {
+  .time__text {
+    margin-bottom: 0px;
+  }
+}
+
+.time__text {
+  color: var(--time__text-color);
 }
 
 .\*\:inline-block > * {
@@ -1067,19 +1211,93 @@ ul {
   filter: blur(5px);
 }
 
+@media (min-width: 768px) {
+  .md\:table {
+    display: table;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:w-\[120px\] {
+    width: 120px;
+  }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
 @media (min-width: 1024px) {
+  .lg\:order-none {
+    order: 0;
+  }
+
   .lg\:block {
     display: block;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:grid-cols-\[60\%_auto\] {
+    grid-template-columns: 60% auto;
   }
 
   .lg\:flex-row {
     flex-direction: row;
   }
+
+  .lg\:gap-13\.5 {
+    gap: 3.375rem;
+  }
+
+  .lg\:gap-9 {
+    gap: 2.25rem;
+  }
+
+  .lg\:gap-9\.5 {
+    gap: 2.375rem;
+  }
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:w-\[115px\] {
+    width: 115px;
+  }
+
+  .xl\:gap-13\.5 {
+    gap: 3.375rem;
+  }
+
+  .xl\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .\32xl\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
   }
 }
+  

@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js}", "./index.html"],
   theme: {
     // fontFamily: { display: ["Fredoka", "sans-serif"] },
     container: {
@@ -30,6 +30,11 @@ module.exports = {
         primary: {
           100: "#1A30B1",
         },
+      },
+      spacing: {
+        7.5: "1.875rem",
+        9.5: "2.375rem",
+        13.5: "3.375rem",
       },
     },
   },
