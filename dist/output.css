@@ -859,6 +859,14 @@ ul {
   margin-right: auto;
 }
 
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+
+.mb-7\.5 {
+  margin-bottom: 1.875rem;
+}
+
 .block {
   display: block;
 }
@@ -977,6 +985,19 @@ ul {
 
 .gap-\[30px\] {
   gap: 30px;
+}
+
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+
+.gap-y-2 {
+  row-gap: 0.5rem;
+}
+
+.gap-y-2\.5 {
+  row-gap: 0.625rem;
 }
 
 .overflow-auto {
@@ -1112,6 +1133,17 @@ ul {
   height: 12px;
   background-repeat: no-repeat;
   background-position: center; */
+}
+
+.official__link_2::after {
+  content: "\2BC8";
+  font-size: 14px;
+}
+
+.official__link_3::after {
+  content: "\25B2";
+  transform: rotateZ(90deg);
+  font-size: 14px;
 }
 
 .time {
@@ -1262,6 +1294,11 @@ ul {
 
   .lg\:gap-9\.5 {
     gap: 2.375rem;
+  }
+
+  .lg\:gap-x-5 {
+    -moz-column-gap: 1.25rem;
+         column-gap: 1.25rem;
   }
 
   .lg\:px-0 {

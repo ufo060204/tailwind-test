@@ -111,6 +111,16 @@
   background-repeat: no-repeat;
   background-position: center; */
 }
+.official__link_2::after {
+  content: "\2BC8";
+  font-size: 14px;
+}
+.official__link_3::after {
+  content: "\25B2";
+  transform: rotateZ(90deg);
+  font-size: 14px;
+}
+
 
 .time {
   @apply px-0 lg:px-5 mb-7.5 lg:mb-10
